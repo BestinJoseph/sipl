@@ -14,7 +14,7 @@ const RegisterForm = () => {
     const handleSubmit = (values, actions) => {
 
     }
-    console.log(initialValues)
+    // console.log(initialValues)
 
     return (
         <Box sx={{maxWidth:500, p:3}}>
