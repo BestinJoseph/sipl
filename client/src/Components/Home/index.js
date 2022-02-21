@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <Box sx={{textAlign:'center',}}>
             <Box sx={{background:'yellow', py:2, boxShadow:2 }}>
-                <Typography variant="h5" sx={{ textAlign: 'center', fontWeight:'medium'}}>KK SIPL</Typography>
+                <Typography variant="h5" sx={{ textAlign: 'center', fontWeight:'medium'}}>RCA <Typography component="span" sx={{fontWeight:700, fontSize:24, color:'green'}}>BASH</Typography></Typography>
             </Box>
             <Box sx={{mb:2}}>
                 <Box sx={{my:4, maxWidth:500}}>
