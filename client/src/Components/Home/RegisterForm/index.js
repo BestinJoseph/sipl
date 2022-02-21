@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Box, Button, InputLabel, MenuItem, Select, TextField, Typography } from '@mui/material'
+import React, { useEffect, useState } from 'react'
+import { Box, Button, MenuItem, Select, TextField, Typography } from '@mui/material'
 import { Formik, Form, Field } from 'formik'
 import moment from 'moment'
 
@@ -8,6 +8,9 @@ const RegisterForm = () => {
 
     const teams = ['Sinmar CC', 'KK Sports', 'Indian Strikers', 'Indian Strikers United', "TBCC", "Techno Make CC", "Challanger XI", "REGC"]
 
+    useEffect(()=>{
+        setInitialValues({fullname: '', state: '', teamname: 'default', dob: moment(Date.now()).format('yyyy-MM-DD'), passport: '' })
+    },[])
     const handleSubmit = (values, actions) => {
 
     }
