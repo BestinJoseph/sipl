@@ -4,9 +4,9 @@ import { Formik, Form, Field } from 'formik'
 import moment from 'moment'
 
 const RegisterForm = () => {
-    const [initialValues, setInitialValues] = useState({fullname: '', state: '', teamname: 'default', dob: moment(Date.now()).format('yyyy-MM-DD'), passport: '' })
+    const [initialValues, setInitialValues] = useState({fullname: '', state: '', mobile: '', teamname: 'default', dob: moment(Date.now()).format('yyyy-MM-DD'), passport: '' })
 
-    const teams = ['Sinmar CC', 'KK Sports', 'Indian Strikers', 'Indian Strikers United', "TBCC", "Techno Make CC", "Challanger XI", "REGC"]
+    const teams = ['Sinmar CC', 'KK Sports', 'Indian Strikers', "Techno Make CC", 'Indian Strikers United', "REGC", "TBCC", "Challanger XI", "Others"]
 
     useEffect(()=>{
         setInitialValues({fullname: '', state: '', teamname: 'default', dob: moment(Date.now()).format('yyyy-MM-DD'), passport: '' })
@@ -36,6 +36,9 @@ const RegisterForm = () => {
                                 ))
                             }
                         </Field>
+                    </Box>
+                    <Box sx={{pb:2}}>
+                        <Field name="mobile" label="Mobile No." type="text" as={TextField} fullWidth/>
                     </Box>
                     <Box sx={{pb:2}}>
                         <Field name="dob" label="Date of Birth" type="date" as={TextField} fullWidth/>

@@ -10,7 +10,7 @@ const Routers = () => {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} exact />
-                <Route path="/conditions" element={<Conditions />} exact />
+                <Route path="/conditions/:type" element={<Conditions />} exact />
             </Routes>
         </Router>
     )
